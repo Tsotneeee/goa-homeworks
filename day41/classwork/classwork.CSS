@@ -1,0 +1,22 @@
+h3 {
+    background-image: url('https://storage.georgia.travel/images/tbilisi-capital-of-georgia-country.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding: 100px;
+    color:antiquewhite;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px black;
+    border: 1px;
+    transition: 0.5s;
+}
+
+h3:hover {
+    width: 900px;
+    height: 500px;
+    cursor: crosshair;
+}
