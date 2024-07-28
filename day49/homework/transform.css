@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* rotate */ 
+#mytext {
+    text-align: center;
+    background-color: blueviolet;
+    width: 400px;
+    height: 400px;
+    transform: rotate(45deg);
+}
+
+/* scale */
+button {
+    margin-top: 1000px;
+    background-color: yellow;
+    height: 50px;
+    width: 100px;
+}
+
+button:hover {
+    transform: scale(1.2, 1.2);
+}
+
+/* translate */
+h6 {
+    background-color: lightgreen;
+    height: 60px;
+    width: 60px;
+    transform: translatex(40px);
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* rotate , scale */
+#my_text {
+    background-color: red;
+    height: 40;
+    width: 50;
+    transform: rotate(40deg) scale(2 , 2) translate(100px , 100px);
+}
+
