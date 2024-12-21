@@ -1,0 +1,11 @@
+html {
+    background-color: rgb(199, 255, 255);
+}
+
+form {
+    border: 1px solid black;
+    height: 150px;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+}

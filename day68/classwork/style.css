@@ -1,1 +1,7 @@
-/* . . . */
+div {
+    border: 1px black solid;
+    width: 400px;
+    height: 400px;
+    background-color: wheat;
+    cursor: pointer;
+}

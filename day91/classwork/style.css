@@ -1,0 +1,73 @@
+html {
+    background-color: rgb(255, 248, 199);
+}
+
+h1 {
+    margin: 20px;
+    position: relative;
+    left: 610px;
+    font-family: cursive;
+    width: 200px;
+}
+
+.parentdiv {
+    margin-left: 150px;
+    margin-top: 100px;
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.childdiv1,.childdiv2,.childdiv3 {
+    border: 1px rgb(176, 114, 0) solid;
+    width: 210px;
+    height: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    text-wrap: wrap;
+    font-family: cursive;
+    background-color: rgb(255, 224, 171);
+    box-shadow: 0px 0px 4px rgb(255, 212, 143);
+    transition: ease-out,50ms;
+}
+
+.childdiv1:hover,.childdiv2:hover,.childdiv3:hover {
+    transform: scale(1.02);
+}
+
+#btn1,#btn2,#btn3 {
+    border-radius: 13px;
+    border: 1px rgb(176,114,0) solid;
+    background-color: rgb(255, 239, 214);
+    box-shadow: 0px 0px 2px rgb(255, 209, 124);
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+    font-family: cursive;
+    font-size: medium;
+}
+
+.collection1 {
+    position: relative;
+    left: 300px;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    border: 1px black solid;
+    height: 400px;
+    width: 800px;
+    font-size: larger;
+    font-family: cursive;
+    background-color: rgba(255, 251, 223, 0.897);
+    border: 2px solid rgb(176,114,0);
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cl1 {
+    display: flex;
+    justify-content: space-evenly;
+}
