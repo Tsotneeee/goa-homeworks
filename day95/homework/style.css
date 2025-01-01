@@ -1,0 +1,104 @@
+html {
+    font-family: calibri;
+    background-color: rgb(238, 255, 254);
+}
+
+h1 {text-align: center;margin: 20px;}
+
+input {
+    padding: 2px 1px 2px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 35px;
+    width: 300px;
+    background-color: rgb(181, 255, 244);
+    font-size: medium;
+}
+
+#submit1 {
+    border: 1px solid rgb(66, 141, 0);
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(2, 240, 149);
+    cursor: pointer;
+    font-size: medium;
+}
+
+.inps {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 200px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(208, 255, 251);
+}
+
+/* output */
+
+.outs {
+    border: 2px solid rgb(0, 129, 109);
+    height: 350px;
+    width: 600px;
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    left: 250px; margin-bottom: 30px;
+    background-color: rgb(196, 255, 242);
+    box-shadow: 0px 0px 5px rgb(136, 233, 212);
+    padding: 20px;
+}
+
+.oouts {
+    width: 220px;
+    font-size: medium;
+}
+
+#name2 {
+    position: relative;
+    left: 370px;
+}
+
+#lstname2 {
+    position: relative;
+    left: 370px;
+}
+
+#age2 {
+    position: relative;
+    left: 370px;
+}
+
+#id2 {
+    position: absolute;
+    left: 180px;
+    top: 300px;
+}
+
+#height2 {
+    position: relative;
+    left: 370px;
+}
+
+#decr2 {
+    position: absolute;
+    left: 180px;
+    top: 335px;
+}
+
+#mail2 {
+    position: relative;
+    left: 370px;
+}
+
+#fakeimg {
+    background-color: rgb(160, 167, 169);
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    border: 1px solid rgb(179, 204, 202);
+    border-radius: 10px;
+}
