@@ -1,0 +1,15 @@
+#mainpg {
+    width: 500px;
+    height: 0px;
+    overflow: hidden;
+}
+
+#nameless {
+    width: 500px;
+    height: 0px;
+    overflow: hidden;
+}
+
+button {
+    background-color: rgb(0, 219, 0);
+}

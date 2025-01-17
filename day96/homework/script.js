@@ -25,7 +25,7 @@ out.innerHTML = results; });
 
 function func(){
     let lcl = localStorage.getItem("clk");
-    localStorage.setItem("clk",JSON.stringify(JSON.parse(lcl)+pluser));
+    localStorage.setItem("clk",Number(lcl)+pluser);
     let results = `clicks: ${localStorage.getItem("clk")}`;
     out.innerHTML = results;
 
