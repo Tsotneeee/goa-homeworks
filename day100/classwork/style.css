@@ -1,0 +1,25 @@
+* {
+    font-family: calibri;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    margin-left: 550px;
+}
+
+p {
+    text-align: center;
+}

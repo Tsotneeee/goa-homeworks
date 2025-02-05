@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Manrope:wght@200..800&display=swap');
+html {
+    background-color: hsl(218, 23%, 16%);
+    font-weight: 800;
+    font-family: manrope;
+}
+
+main {
+    position: relative;
+    top: 200px;
+    padding: 10px 30px;
+    margin: auto;
+    background-color: hsl(217, 19%, 24%);
+    width: 420px;
+    border-radius: 10px;
+    height: 260px;
+}
+
+#p1 {
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+
+}
+
+#p2 {
+    color: hsl(193, 38%, 86%);
+    font-size: x-large;
+}
+
+hr {
+    border: 1px solid hsl(217, 19%, 38%);
+    position: relative;
+    top: 20px;
+    
+}
+
+.dicing {
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 47.5%;
+    top: 90%;
+    cursor: pointer;
+}
+
+.dicing:hover {
+box-shadow: 0 0 40px hsl(150, 100%, 66%);
+}
+
+.cont {
+    /* border: 1px solid black; */
+    height: 180px;
+    text-align: center;
+}
