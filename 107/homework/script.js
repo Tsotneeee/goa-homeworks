@@ -1,4 +1,7 @@
-import { item1 , item2} from './classes.mjs';
+import m from "./classes.mjs";
+
+let item1 = new m("apple", 15);
+let item2 = new m("wrench", 100);
 
 let p1 = document.getElementById('p1');
 let p2 = document.getElementById('p2');
