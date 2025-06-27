@@ -1,0 +1,35 @@
+.cards{
+    border: 1px solid black;
+    /* display: inline; */
+    margin: 50px 30%;
+    width: 600px;
+    height: 700px;
+    padding: 20px;
+}
+
+html {
+    font-family: calibri;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.price {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    font-weight: bold;
+}
+
+button {
+    background-color: lawngreen;
+    padding: 10px;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 100px;
+    cursor: pointer;
+}

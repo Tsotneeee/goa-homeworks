@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+	<title>Frontend Mentor | Contact form</title>
+
+  	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  	<!-- <style>
+    	.attribution { font-size: 11px; text-align: center; }
+    	.attribution a { color: hsl(228, 45%, 44%); }
+	</style> -->
+</head>
+<body>
+	<main>
+		<p id="intro">Contact Us</p>
+		<div class="inputs">
+			<div class="name">
+				<label for="name">First Name <span class="star">*</span></label><br>
+				<input type="text" id="name">
+			</div>
+			<div class="last_name">
+				<label for="lst_name">Last Name <span class="star">*</span></label><br>
+				<input type="text" id="lst_name">
+			</div>
+		</div>
+		<div class="email">
+			<label for="email">Email Address <span class="star">*</span></label><br>
+			<input type="text" id="email">
+		</div>
+		<div class="query_type">
+			<label for="qt">Query type <span class="star">*</span></label><br>
+			<div class="container">
+				<div class="rad1">
+					<input name="r" class="r" id="r1" type="radio">
+					General Enquiry
+				</div>
+				<div class="rad2">
+					<input name="r" class="r" id="r2" type="radio">
+					Support Enquiry
+				</div>
+			</div>
+		</div>
+		<div class="message">
+			<label for="text">Message <span class="star">*</span></label><br>
+			<textarea id="text" cols="30" rows="10"></textarea>
+		</div>
+		<div class="outros">
+			<input type="checkbox" id="checkbox" name="checkbox">
+			<p id="outro">I consent to being contacted by the team <span class="star">*</span></p><br>
+		</div>
+		<button id="submiter">Submit</button>
+	</main>
+  	<!-- <div class="attribution">
+    	Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+   		Coded by <a href="#">Tsotne Bajelidze</a>.
+  	</div> -->
+	<!-- <script src=""></script> -->
+</body>
+</html>
