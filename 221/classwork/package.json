@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "node-ts": "^8.0.8",
+    "tsc": "^2.0.4",
+    "typescript": "^5.9.3"
+  }
+}
