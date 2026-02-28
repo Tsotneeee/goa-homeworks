@@ -1,0 +1,16 @@
+{
+  "todoLists": [
+    {
+      "id": 1,
+      "todo": "jump out of the window"
+    },
+    {
+      "id": 2,
+      "todo": "learn node.js"
+    },
+    {
+      "id": 3,
+      "todo": "say hello"
+    }
+  ]
+}

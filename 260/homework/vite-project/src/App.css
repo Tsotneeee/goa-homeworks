@@ -1,0 +1,134 @@
+.carIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.navigator {
+    color: rgba(255, 255, 255);
+    background-color: #0065b7;
+    border-bottom: 4px solid #003865;
+}
+
+.linkBtn {
+    /* border: 1px solid black; */
+    font-weight: 600;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.linkBtn:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: #0065b7;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.prfileIcon {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+/* navbar end */
+
+.profile-card { /* todo */
+    border-radius: 7px;
+    border: 1px solid #000000;
+}
+
+.search-container {
+    margin-top: 40px;
+}
+
+.search-input {
+    width: 700px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #525252;
+    font-size: x-large;
+    border-radius: 25px;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sign-up-container {
+    padding-top: 60px;
+    /* color: white; */
+    width: 1536px;
+    height: 729px;
+    background-color: #00325b;
+    /* border: 1px solid #000000; */
+}
+
+.sign-up-child {
+    padding: 30px;
+    border: 4px solid #002747;
+    box-shadow: 0px 0px 60px 10px #000f1b;
+    border-radius: 20px;
+    margin: auto;
+    width: 1000px;
+    height: 530px;
+    background-color: #e4eaf0;
+}
+
+.putable {
+    border: 2px solid #000000;
+    padding: 8px 10px 8px 15px;
+    margin: 2px;
+    width: 450px;
+    font-size: large;
+    border-radius: 15px;
+}
+
+.goBack {
+    border: 1px solid #000000;
+    background-color: #131313;
+    padding: 5px 25px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.homeIcon {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.profile-container {
+    /* box-shadow: 0px 0px 60px 10px #000f1b; */
+    font-size: x-large;
+    margin-top: 90px;
+    /* height: 600px; */
+    display: flex;
+    justify-content: center;
+}
+
+.log-in-child {
+    padding: 30px;
+    border: 4px solid #002747;
+    box-shadow: 0px 0px 60px 10px #000f1b;
+    border-radius: 20px;
+    margin: auto;
+    width: 550px;
+    height: 530px;
+    background-color: #e4eaf0;
+}
+
+/* .car-card {
+
+} */

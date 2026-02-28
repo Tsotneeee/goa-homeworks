@@ -1,6 +1,5 @@
 # buble sort O(n**2)
 def bubbleSort(lst):
-    # this was my first time actualy making this
     for i in range(len(lst)):
         for j in range(len(lst)-1):
             if lst[j] > lst[j+1]:
@@ -14,7 +13,6 @@ print(lst1)
 
 # sele sort O(n**2)
 def selectionSort(lst):
-    # sorry but copilot helped me 
     for i in range(len(lst)):
         minIndex = i
         for j in range(i+1, len(lst)):
