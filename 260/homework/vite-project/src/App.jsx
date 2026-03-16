@@ -9,7 +9,7 @@ import Footer from './components/footer.jsx'
 
 function App() {
   const [search, setSearch] = useState('');
-  const debouncedSearch = useDebounce(search, 500);
+  const debouncedSearch = useDebounce(search, 300);
   const [cars, setCars] = useState([]);
   
   const handleSearchChange = (e) => {
@@ -54,7 +54,6 @@ function App() {
               key={car.id} h
               className="bg-white rounded-2xl shadow-md flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-shadow duration-300 group"
             >
-              {/* Image Container */}
               <div className="relative h-48 overflow-hidden">
                 <img 
                   src={car.image} 
@@ -63,7 +62,6 @@ function App() {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-5">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold text-gray-800">{car.name}</h3>

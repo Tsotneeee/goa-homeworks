@@ -19,7 +19,6 @@ function LogIn() {
     e.preventDefault()
     console.log(formData)
     try {
-      // send JSON payload; backend likely expects application/json
       const res = await axios.post('http://localhost:3000/users/login', formData)
       const data = res.data
       

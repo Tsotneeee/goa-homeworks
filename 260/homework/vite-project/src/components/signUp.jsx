@@ -26,6 +26,7 @@ function SignUp() {
       if (data.success){
         console.log(data.data)
         localStorage.setItem("user", JSON.stringify(data.data))
+        alert("you signed up")
       } else {
         alert(data.message)
       }

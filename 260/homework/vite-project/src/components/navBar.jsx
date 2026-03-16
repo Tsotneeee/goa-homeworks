@@ -3,7 +3,6 @@ import { FaCarSide } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { IoMdContact } from "react-icons/io";
 import ProfileCard from './profileCard';
-// <FaCarSide />
 
 function NavBar() {
     const [refresh, setRefresh] = useState(false)
@@ -16,13 +15,13 @@ function NavBar() {
             <h1 className=' font-semibold text-4xl'>ApexDrive</h1>
         </div>
 
-        <div className=' p-2'> {/* navs */}
+        <div className=' p-2'>
             <Link to="/about-us" className=' linkBtn'>About us</Link>
             <Link to="/contact-us" className=' linkBtn'>Contact us</Link>
             <Link to="/cart" className='linkBtn'>Cart</Link>
         </div>
         
-        <div className=' flex'> {/* account */}
+        <div className=' flex'>
             {localStorage.getItem('user') == 'null' ?
                 <div>
                 <Link to="/login" className='linkBtn'>Log In</Link>

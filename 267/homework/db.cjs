@@ -1,6 +1,6 @@
 const DATABASE = require('better-sqlite3');
 
-const db = new DATABASE('./db.sqlite');
+const db = new DATABASE('267/homework/db.sqlite');
 
 db.exec(`
     CREATE TABLE IF NOT EXISTS products (
@@ -45,8 +45,6 @@ function stockPriceSum() {
   return res.TPrice;
 }
 
-
-
 // console.log(stockPriceSum());
 
 function stockCount() {
@@ -64,5 +62,12 @@ function returnAll() {
   const res = smt.all();
   return res;
 }
- 
-module.exports = { db, countGroupByPrice, maxPrice, addProduct, stockPriceSum, stockCount, returnAll };
+
+function group() {
+  const stmt = db.prepare(`SELECT price, product, COUNT(price) AS count FROM products GROUP BY product`)
+  return stmt.all()
+}
+
+// console.log(group())
+
+module.exports = { db, group, countGroupByPrice, maxPrice, addProduct, stockPriceSum, stockCount, returnAll };

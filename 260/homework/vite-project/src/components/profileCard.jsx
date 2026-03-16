@@ -30,8 +30,6 @@ function ProfileCard() {
   return (
     <div className="profile-container relative inline-block">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-        
-        {/* Header/Avatar Section */}
 
         <div className="bg-indigo-600 p-6 text-center">
           <Link to="/"><IoMdArrowBack className="text-white text-2xl" /></Link>
@@ -42,16 +40,13 @@ function ProfileCard() {
           <p className="text-indigo-100 text-sm">{userData.gender}</p>
         </div>
 
-        {/* Details Section */}
         <div className="p-6 space-y-4">
-          
-          {/* Email */}
+
           <div className="flex flex-col border-b border-gray-100 pb-2">
             <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Email Address</label>
             <p className="text-gray-700 font-medium">{userData.email}</p>
           </div>
 
-          {/* Password */}
           <div className="flex flex-col border-b border-gray-100 pb-2">
             <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Password</label>
             <div className="flex justify-between items-center">
@@ -67,13 +62,11 @@ function ProfileCard() {
             </div>
           </div>
 
-          {/* Phone Number */}
           <div className="flex flex-col border-b border-gray-100 pb-2">
             <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Phone Number</label>
             <p className="text-gray-700 font-medium">{userData.number}</p>
           </div>
 
-          {/* Address */}
           <div className="flex flex-col">
             <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Home Address</label>
             <p className="text-gray-700 font-medium leading-relaxed">{userData.address}</p>

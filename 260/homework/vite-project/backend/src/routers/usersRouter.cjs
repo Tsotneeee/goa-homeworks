@@ -30,9 +30,12 @@ usersRouter.post('/login', (req, res)=> {
         res.json({success: false, message: "user not found"})
     }
     if (dbUser.password != reqBody.password || dbUser.email != reqBody.email) {
+        // console.log(reqBody)
+        // console.log(dbUser)
         res.json({success: false, message: "wrong password or email"})
         return
     }
+    
     res.json({success: true, data: dbUser})
 })
 

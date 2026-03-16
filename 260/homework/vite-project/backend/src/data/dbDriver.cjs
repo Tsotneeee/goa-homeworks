@@ -24,6 +24,26 @@ CREATE TABLE IF NOT EXISTS cars (
 )
 `)
 
+db.exec(`
+CREATE TABLE IF NOT EXISTS orders (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    userId INTEGER NOT NULL,
+    carId INTEGER KEY NOT NULL,
+    FOREIGN KEY(userId) REFERENCES users(id),
+    FOREIGN KEY(carId) REFERENCES cars(id)
+)
+`)
+
+function addOrder(  carId, userId ) {
+    const stmt = db.prepare(`INSERT INTO orders ( cardId, userId) VALUE ( ?, ? )`)
+    return stmt.run( carId, userId )
+}
+
+function getOrders() {
+    const stmt = db.prepare(`SELECT * FROM orders`)
+    return stmt.all()
+}
+
 function addUser(username, email, password, gender, address, phone) {
     const stmt = db.prepare(`INSERT INTO users (username, email, password, gender, address, phone) VALUES (?, ?, ?, ?, ?, ?)`)
     return stmt.run(username, email, password, gender, address, phone)
@@ -59,4 +79,4 @@ function carsFilter(filter) {
     return stmt.all(`%${filter}%`, `%${filter}%`)
 }
 
-module.exports = { db, addUser, getUsers, getCars, getUserByUsername, addCar, activeUsers, carsFilter };
+module.exports = { db, addUser, getUsers, getCars, getUserByUsername, addCar, activeUsers, carsFilter, addOrder, getOrders };

@@ -14,6 +14,7 @@ carsRouter.post('/', (req, res) => {
 
 carsRouter.get('/', (req, res) => {
     const cars = getCars()
+    // console.log(cars)
     if (cars.length === 0) {
         res.json({data:cars, success: false, message: "No cars found"})
     } else {
@@ -30,5 +31,7 @@ carsRouter.post('/filter', (req, res) => {
     const cars = carsFilter(filter)
     res.json({data:cars, success: true})
 })
+
+
 
 module.exports = carsRouter

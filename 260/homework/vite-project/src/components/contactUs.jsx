@@ -9,7 +9,6 @@ const ContactUs = () => {
       
       <div className="max-w-6xl mx-auto">
         
-        {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">
             Get In Touch
@@ -23,10 +22,7 @@ const ContactUs = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-10">
-          
-          {/* Info Cards Column */}
           <div className="space-y-6">
-            {/* Phone Card */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-blue-100 flex items-start space-x-4 transition-hover hover:shadow-md">
               <div className="bg-sky-100 p-3 rounded-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -40,7 +36,6 @@ const ContactUs = () => {
               </div>
             </div>
 
-            {/* Email Card */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-blue-100 flex items-start space-x-4 transition-hover hover:shadow-md">
               <div className="bg-sky-100 p-3 rounded-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,7 +49,6 @@ const ContactUs = () => {
               </div>
             </div>
 
-            {/* Location Card */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-blue-100 flex items-start space-x-4 transition-hover hover:shadow-md">
               <div className="bg-sky-100 p-3 rounded-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -69,8 +63,6 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-
-          {/* Contact Form Column */}
 
           <div className="lg:col-span-2 bg-white rounded-[2.5rem] p-8 md:p-12 shadow-xl shadow-blue-900/10 border border-white">
             <form className="grid md:grid-cols-2 gap-6" onSubmit={(e) => e.preventDefault()}>
