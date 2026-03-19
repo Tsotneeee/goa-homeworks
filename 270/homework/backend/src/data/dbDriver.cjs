@@ -6,6 +6,7 @@ db.exec(`
 CREATE TABLE IF NOT EXISTS Users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT NOT NULL UNIQUE,
+    email TEXT NOT NULL,
     password TEXT NOT NULL
 )
 `)
@@ -43,8 +44,8 @@ function getUserByUsername(username) {
 }
 
 function addUser(obj) { // { username, password }
-    const stmt = db.prepare(`INSERT INTO Users (username, password) VALUES (?, ?)`)
-    return stmt.run(obj.username, obj.password)
+    const stmt = db.prepare(`INSERT INTO Users (username, email, password) VALUES (?, ?, ?)`)
+    return stmt.run(obj.username, obj.email, obj.password)
 }
 
 //// console.log(addUser({username: "tsotne", password: "greg32"}))
@@ -55,7 +56,8 @@ function getHistory() {
 }
 
 function getHistoryByGroupId(id) {
-    return db.prepare(`SELECT * FROM history WHERE group_id = ?`).all(id)
+    const stmt = db.prepare(`SELECT h.message, u.username FROM history h JOIN Users u ON h.user_id = u.id WHERE h.group_id = ?`).all(id)
+    return stmt
 }
 
 function addHistory(obj) { // add message { userID, message, groupId }

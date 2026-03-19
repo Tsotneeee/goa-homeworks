@@ -3,8 +3,10 @@ const app = express()
 const PORT = 3000
 const usersRouter = require('./routes/usersRouter.cjs')
 const historyRouter = require('./routes/historyRouter.cjs')
+const cors = require('cors')
 
 app.use(express.json())
+app.use(cors())
 
 app.use('/users', usersRouter)
 

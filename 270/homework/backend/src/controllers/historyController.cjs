@@ -6,8 +6,7 @@ const addMessage = (req, res) => {
         res.status(400).json({success: false, message: "fill the form"})
         return
     }
-    
-    res.json({success: true, data:addHistory(body)})
+    res.status(201).json({success: true, data:addHistory(body)})
 }
 
 const getChat = (req, res) => {

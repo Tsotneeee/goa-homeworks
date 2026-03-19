@@ -1,0 +1,238 @@
+nav {
+    border-bottom: 2px solid rgba(70, 70, 70, 0.845);
+    font-size: 45px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputDiv {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.Linker {
+    font-size: 30px;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    padding: 5px 15px;
+    border-radius: 1px;
+    color: white;
+}
+
+.Linker:hover {
+    background-color: rgb(50, 50, 55);
+}
+
+.groupInput {
+    border: 1px solid rgba(139, 139, 139, 0.587);
+    padding: 10px 12px;
+    /* height: 15px; */
+    font-size: larger;
+    width: 200px;
+    border-radius: 50px;
+}
+
+.groupButton {
+    border: none;
+    height: 42px;
+    width: 100px;
+    cursor: pointer;
+    font-size: large;
+    background-color: rgba(51, 54, 255, 0.932);
+    border-radius: 12px;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+.chatText {
+    font-size: x-large;
+}
+
+main {
+    margin: 10px 200px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.parent-card {
+    /* border: 1px solid black; */
+    padding: 5px 10px;
+}
+
+.child-card {
+    /* border: 1px solid black; */
+    padding: 5px 0;
+}
+
+.send-icon {
+    margin-left: 5px;
+    font-size: large;
+}
+
+.grandpa-card {
+    background-color: rgb(46, 46, 52);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+.faceIcon {
+    height: 50px;
+    width: 50px;
+}
+
+input {
+    background-color: rgba(84, 84, 84, 0.537);
+    color: white;
+}
+
+.message-box {
+    box-shadow: 0px 0px 40px 10px rgb(25, 25, 25);
+    border-top: 2px solid rgb(58, 58, 58);
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 41);
+    gap: 20px;
+}
+
+.message-input {
+    border: 1px solid rgba(139, 139, 139, 0.587);
+    height: 20px;
+    font-size: larger;
+    padding: 10px 14px;
+    width: 400px;
+    border-radius: 50px;
+}
+
+.message-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    font-size: large;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+    background-color: rgba(51, 54, 255, 0.932);
+    color: white;
+}
+
+.child-sign {
+    padding: 20px;
+    /* border: 1px solid white; */
+    /* height: 330px; */
+    gap: 15px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: space-between; */
+}
+
+.parent-sign {
+    padding: 20px;
+    text-align: center;
+    border: 1.5px solid rgb(94, 94, 94);
+    background-color: #343439cb;
+    border-radius: 5px;
+    width: 500px;
+    margin: 80px auto;
+}
+
+/* the Register text in sign up */
+.P-rank {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.info-input {
+    margin: 7px;
+    border: 1px solid rgba(139, 139, 139, 0.587);
+    height: 20px;
+    font-size: large;
+    padding: 10px 14px;
+    width: 370px;
+    border-radius: 50px;
+}
+
+.reg-but {
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+
+.reg-button {
+    color: white;
+    font-size: 20px;
+    /* width: 100px; */
+    padding: 8px 23px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 7px;
+    background-color: rgba(51, 54, 255, 0.932);
+    text-decoration: none;
+    border: none;
+}
+
+.returner {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /* width: 100px; */
+    padding: 8px 23px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(69, 69, 69);
+    background-color: rgb(47, 47, 47);
+}
+
+.refresh-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 7px;
+    font-size: large;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+    background-color: rgba(64, 64, 64, 0.774);
+    color: white;
+}
+
+.no-message {
+    margin: 100px auto;
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(113, 113, 113);
+}
+
+.sign-out {
+    /* height: 50px; */
+    padding: 5px 20px;
+    font-size: 25px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+.sign-out:hover {
+    background-color: rgba(108, 108, 108, 0.075);
+}
