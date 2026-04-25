@@ -39,7 +39,6 @@ class BinaryTree {
         }
     }
 
-    // Search for a value in the tree
     search(value) {
         let current = this.root;
         
@@ -54,7 +53,6 @@ class BinaryTree {
         return false;
     }
 
-    // In-order traversal (Left, Root, Right) - gives sorted output
     inorder(node = this.root, result = []) {
         if (node !== null) {
             this.inorder(node.left, result);
@@ -64,7 +62,6 @@ class BinaryTree {
         return result;
     }
 
-    // Pre-order traversal (Root, Left, Right)
     preorder(node = this.root, result = []) {
         if (node !== null) {
             result.push(node.value);
@@ -74,7 +71,6 @@ class BinaryTree {
         return result;
     }
 
-    // Post-order traversal (Left, Right, Root)
     postorder(node = this.root, result = []) {
         if (node !== null) {
             this.postorder(node.left, result);
@@ -84,7 +80,6 @@ class BinaryTree {
         return result;
     }
 
-    // minimum value
     findMin(node = this.root) {
         if (node === null) return null;
         while (node.left !== null) {
@@ -93,7 +88,6 @@ class BinaryTree {
         return node.value;
     }
 
-    // maximum value
     findMax(node = this.root) {
         if (node === null) return null;
         while (node.right !== null) {
@@ -102,39 +96,35 @@ class BinaryTree {
         return node.value;
     }
 
-    // Delete value
     delete(value) {
-        this.root = this.deleteNode(this.root, value);
+        this.root = this.#deleteNode(this.root, value);
         return this;
     }
 
-    deleteNode(node, value) {
+    #deleteNode(node, value) {
         if (node === null) return null;
 
         if (value < node.value) {
-            node.left = this.deleteNode(node.left, value);
+            node.left = this.#deleteNode(node.left, value);
         } else if (value > node.value) {
-            node.right = this.deleteNode(node.right, value);
+            node.right = this.#deleteNode(node.right, value);
         } else {
-            // Node to delete found
             if (node.left === null && node.right === null) {
                 return null;
             }
             if (node.left === null) return node.right;
             if (node.right === null) return node.left;
 
-            // Node has two children
             let minRight = node.right;
             while (minRight.left !== null) {
                 minRight = minRight.left;
             }
             node.value = minRight.value;
-            node.right = this.deleteNode(node.right, minRight.value);
+            node.right = this.#deleteNode(node.right, minRight.value);
         }
         return node;
     }
 
-    // Get height of the tree
     height(node = this.root) {
         if (node === null) return -1;
         return 1 + Math.max(this.height(node.left), this.height(node.right));

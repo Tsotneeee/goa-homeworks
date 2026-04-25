@@ -1,0 +1,5 @@
+CREATE TABLE logs (
+    id INTEGER PRIMARY KEY,
+    event TEXT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);

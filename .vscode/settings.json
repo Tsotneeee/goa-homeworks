@@ -1,0 +1,12 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "idk bro",
+            "group": "g1",
+            "database": "${workspaceFolder:goa course}/281/homework/db.db"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+SELECT * FROM employees WHERE department_id = 5 ORDER BY income LIMIT 1;
